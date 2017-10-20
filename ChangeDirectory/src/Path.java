@@ -16,8 +16,9 @@ public class Path {
 
     public void cd(String newPath) throws IllegalArgumentException{
 
-        if (!newPath.matches("[a-zA-Z/]")){
-            if(!newPath.contains("..") || newPath.contains("...")){
+        newPath = newPath.replace(" ", "");
+        if (!newPath.matches("[a-zA-Z/]*")){
+            if((!newPath.contains("../") || newPath.contains("...")) && !newPath.equals("..")){
                 throw new IllegalArgumentException("Invalid Directory Entered");
             }
         }
