@@ -2,11 +2,9 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.util.*;
 
-import javax.xml.stream.Location;
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.events.Attribute;
-import javax.xml.stream.events.Characters;
 import javax.xml.stream.events.XMLEvent;
 
 /**
